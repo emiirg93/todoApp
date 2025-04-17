@@ -1,0 +1,6 @@
+<ul class="todo-list">
+  <!-- `editing` when editing `completed` when marked as completed -->
+  @for (item of todos | filterTodo:filterCurrent; track item.id) {
+    <app-todo-items [todo]="item" />
+  }
+</ul>
